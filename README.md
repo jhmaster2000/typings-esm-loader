@@ -1,6 +1,11 @@
 # ESM Loader Typings
 > Typings for Node.js custom ESM loaders
 
+[![license][license-image]][license-url]
+[![GitHub version][github-image]][github-url]
+[![npm release][npm-image]][npm-url]
+[![node-current][node-image]][node-url]
+
 Node.js custom ESM loaders need to be written in JS as they're passed directly to Node.js on startup, but that doesn't mean we can't have types on them.
 
 ## Install
@@ -41,3 +46,12 @@ export function globalPreload() { ... }
   - `Context`: the `interface` representing the import context object passed to `load` hooks.
   - `Return`: the `interface` representing the required return type of `load` hooks.
   - `Function`: structurally identical to `load` type, used to disambiguate between the user's hook (`load`) and the load function argument passed to it.
+
+[github-url]:https://github.com/jhmaster2000/typings-esm-loader
+[github-image]:https://img.shields.io/github/package-json/v/jhmaster2000/typings-esm-loader.svg
+[license-url]:https://github.com/jhmaster2000/typings-esm-loader/blob/master/LICENSE
+[license-image]:https://img.shields.io/npm/l/typings-esm-loader.svg
+[npm-url]:http://npmjs.org/package/typings-esm-loader
+[npm-image]:https://img.shields.io/npm/v/typings-esm-loader.svg?color=darkred&label=npm%20release
+[node-url]:https://nodejs.org/en/download
+[node-image]:https://img.shields.io/node/v/typings-esm-loader.svg
