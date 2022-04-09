@@ -1,4 +1,4 @@
-export {};
+declare module 'typings-esm-loader' {
 
 declare global {
     interface Loader {
@@ -86,4 +86,6 @@ declare global {
      * @requires - Only available inside {@linkcode globalPreload} return value scope.
      */
     type getBuiltin = (request: string) => any;
+}
+
 }
