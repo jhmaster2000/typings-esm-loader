@@ -15,3 +15,29 @@ At the top of your loader's JS file:
 /// @ts-check
 ```
 The `/// @ts-check` line is optional and can be removed if you only want type hints with no strict type checking.
+
+You can now use JSDoc comments to typecast your hooks to their respective types as such:
+```js
+/** @type {resolve} */
+export async function resolve(specifier, context, defaultResolve) { ... }
+
+/** @type {load} */
+export async function load(url, context, defaultLoad) { ... }
+
+/** @type {globalPreload} */
+export function globalPreload() { ... }
+```
+
+#### Other types provided
+- `Loader`: an `interface` representing an ESM loader when imported as a module, useful when [multiloading](https://github.com/jhmaster2000/multiloader).
+- `TypedArray`: a union type representing all built-in [TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) objects. Used for `load` hook's return value `source` field.
+- `ModuleFormat`: a union type representing all valid module formats to pass to the `load` hook's return value `format` field.
+- `getBuiltin`: a type declaration for the function of same name provided in the global scope of `globalPreload` hook's scripts.
+- ***namespace*** `Resolve`
+  - `Context`: the `interface` representing the import context object passed to `resolve` hooks.
+  - `Return`: the `interface` representing the required return type of `resolve` hooks.
+  - `Function`: structurally identical to `resolve` type, used to disambiguate between the user's hook (`resolve`) and the resolve function argument passed to it.
+- ***namespace*** `Load`
+  - `Context`: the `interface` representing the import context object passed to `load` hooks.
+  - `Return`: the `interface` representing the required return type of `load` hooks.
+  - `Function`: structurally identical to `load` type, used to disambiguate between the user's hook (`load`) and the load function argument passed to it.
