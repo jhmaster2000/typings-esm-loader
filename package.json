@@ -3,6 +3,8 @@
     "version": "1.0.0",
     "description": "Typings for Node.js custom ESM loaders",
     "type": "module",
+    "main": "",
+    "types": "esm-loader.d.ts",
     "homepage": "https://github.com/jhmaster2000/typings-esm-loader#readme",
     "repository": {
         "type": "git",
