@@ -1,6 +1,6 @@
 {
     "name": "typings-esm-loader",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Typings for Node.js custom ESM loaders",
     "type": "module",
     "main": "",
