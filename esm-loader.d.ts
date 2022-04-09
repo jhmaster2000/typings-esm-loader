@@ -1,5 +1,6 @@
 declare module 'typings-esm-loader' {
 
+//@ts-expect-error tsserver sometimes glitches out and complains about the 'declare global', but still works fine
 declare global {
     interface Loader {
         resolve?: resolve;

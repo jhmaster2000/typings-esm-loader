@@ -5,7 +5,7 @@ Node.js custom ESM loaders need to be written in JS as they're passed directly t
 
 ## Install
 ```sh
-npm i -D jhmaster2000/typings-esm-loader
+npm i -D typings-esm-loader
 ```
 
 ## Usage
