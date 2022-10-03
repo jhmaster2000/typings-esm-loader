@@ -1,12 +1,12 @@
 declare module 'typings-esm-loader' {
 
-//@ts-expect-error tsserver sometimes glitches out and complains about the 'declare global', but still works fine
+// @ts-expect-error tsserver sometimes glitches out and complains about the 'declare global', but still works fine
 declare global {
     interface Loader {
         resolve?: resolve;
         load?: load;
         globalPreload?: globalPreload;
-        [key: string]: any;
+        [key: string]: unknown;
     }
 
     type TypedArray = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array | BigInt64Array | BigUint64Array;
