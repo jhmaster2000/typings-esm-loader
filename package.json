@@ -1,7 +1,7 @@
 {
     "name": "typings-esm-loader",
-    "version": "1.0.1",
-    "description": "Typings for Node.js custom ESM loaders",
+    "version": "2.0.0",
+    "description": "Type definitions for Node.js custom ESM loaders",
     "type": "module",
     "types": "esm-loader.d.ts",
     "homepage": "https://github.com/jhmaster2000/typings-esm-loader#readme",
@@ -30,6 +30,6 @@
         "esm-loader.d.ts"
     ],
     "devDependencies": {
-        "@types/node": "^17.0.23"
+        "@types/node": "^18.8.1"
     }
 }

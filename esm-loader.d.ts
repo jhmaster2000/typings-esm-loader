@@ -1,5 +1,5 @@
 /**
- * Type definitions for custom Node.js ESM loaders
+ * Type definitions for Node.js custom ESM loaders
  * @docs https://nodejs.org/api/esm.html#loaders
  * @docsversion v18.10.0
  * @stability 1 - Experimental
@@ -19,6 +19,7 @@ declare global {
         resolve?: resolve;
         load?: load;
         globalPreload?: globalPreload;
+        /** Additional arbitrary user-defined loader exports */
         [key: string]: unknown;
     }
 
